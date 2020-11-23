@@ -1,0 +1,534 @@
+2020-09-01 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on DESKTOP-PP6H896 with PID 10024 (C:\Users\ChaoChang\Desktop\project\springboot-demo\springboot-demo\target\classes started by ChaoChang in C:\Users\ChaoChang\Desktop\project\springboot-demo\springboot-demo)
+2020-09-01 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-09-01 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ef3eef9: startup date [Tue Sep 01 14:56:21 CST 2020]; root of context hierarchy
+2020-09-01 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-09-01 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-09-01 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-09-01 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-09-01 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 2905 ms
+2020-09-01 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-09-01 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-09-01 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-09-01 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-09-01 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ef3eef9: startup date [Tue Sep 01 14:56:21 CST 2020]; root of context hierarchy
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/async/hello],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.AsyncController.hello()
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/complex/mail/send],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.EmailController.complexMailSend() throws javax.mail.MessagingException
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/simple/mail/send],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.EmailController.simpleMailSend()
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.SampleController.helloWord()
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-09-01 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-09-01 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-09-01 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-09-01 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-09-01 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 5.432 seconds (JVM running for 5.946)
+2020-09-01 === [http-nio-8090-exec-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-09-01 === [http-nio-8090-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-09-01 === [http-nio-8090-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2020-09-01 === [http-nio-8090-exec-1] === TRACE === com.ibm.springboot.controller.LoggingController === - 这是trace日志...
+2020-09-01 === [http-nio-8090-exec-1] === DEBUG === com.ibm.springboot.controller.LoggingController === - 这是debug日志...
+2020-09-01 === [http-nio-8090-exec-1] === INFO  === com.ibm.springboot.controller.LoggingController === - 这是info日志...
+2020-09-01 === [http-nio-8090-exec-1] === WARN  === com.ibm.springboot.controller.LoggingController === - 这是warn日志...
+2020-09-01 === [http-nio-8090-exec-1] === ERROR === com.ibm.springboot.controller.LoggingController === - 这是error日志...
+2020-11-17 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 2348 (started by Administrator in C:\Users\Administrator\Desktop\新建文件夹\1028\1028\springboot-demo\springboot-demo)
+2020-11-17 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-17 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Tue Nov 17 09:26:17 CST 2020]; root of context hierarchy
+2020-11-17 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-17 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-17 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-17 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-17 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1725 ms
+2020-11-17 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-17 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-17 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-17 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-17 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Tue Nov 17 09:26:17 CST 2020]; root of context hierarchy
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/async/hello],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.AsyncController.hello()
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/simple/mail/send],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.EmailController.simpleMailSend()
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/complex/mail/send],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.EmailController.complexMailSend() throws javax.mail.MessagingException
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.SampleController.helloWord()
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-17 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-17 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-17 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-17 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-17 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-17 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-17 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 3.479 seconds (JVM running for 3.865)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 7056 (started by Administrator in C:\Users\Administrator\Desktop\新建文件夹\1028\1028\springboot-demo\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 09:17:28 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1714 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 09:17:28 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/async/hello],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.AsyncController.hello()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/complex/mail/send],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.EmailController.complexMailSend() throws javax.mail.MessagingException
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/simple/mail/send],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.EmailController.simpleMailSend()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.SampleController.helloWord()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 3.569 seconds (JVM running for 3.921)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 6108 (started by Administrator in C:\Users\Administrator\Desktop\新建文件夹\1028\1028\springboot-demo\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 09:22:38 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1380 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 09:22:38 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.914 seconds (JVM running for 3.293)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplicationTests === - Starting SpringbootApplicationTests on PC24 with PID 8952 (started by Administrator in D:\newtest\���\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplicationTests === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.w.context.support.GenericWebApplicationContext === - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7f485fda: startup date [Wed Nov 18 16:04:08 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7f485fda: startup date [Wed Nov 18 16:04:08 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplicationTests === - Started SpringbootApplicationTests in 2.142 seconds (JVM running for 2.73)
+2020-11-18 === [Thread-2] === INFO  === o.s.w.context.support.GenericWebApplicationContext === - Closing org.springframework.web.context.support.GenericWebApplicationContext@7f485fda: startup date [Wed Nov 18 16:04:08 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 8008 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:04:41 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1377 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:04:41 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.829 seconds (JVM running for 3.158)
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 6828 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:11:27 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1421 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:11:27 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === ERROR === org.apache.catalina.core.StandardService === - Failed to start connector [Connector[HTTP/1.1-8090]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ibm.springboot.SpringbootApplication.main(SpringbootApplication.java:17)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Stopping service [Tomcat]
+2020-11-18 === [main] === INFO  === o.s.b.a.l.AutoConfigurationReportLoggingInitializer === - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-11-18 === [main] === ERROR === o.s.b.diagnostics.LoggingFailureAnalysisReporter === - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:11:27 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Unregistering JMX-exposed beans on shutdown
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 8336 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:11:38 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1295 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:11:38 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.82 seconds (JVM running for 3.174)
+2020-11-18 === [http-nio-8090-exec-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 6524 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:14:59 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1280 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:14:59 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.717 seconds (JVM running for 3.076)
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 8004 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:17:38 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1250 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:17:38 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.686 seconds (JVM running for 3.066)
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 4284 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:21:50 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1305 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:21:50 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.617 seconds (JVM running for 2.975)
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-2] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 8308 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:28:53 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1281 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 16:28:53 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.717 seconds (JVM running for 3.089)
+2020-11-18 === [http-nio-8090-exec-3] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 10428 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 17:14:23 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1373 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 17:14:23 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === ERROR === org.apache.catalina.core.StandardService === - Failed to start connector [Connector[HTTP/1.1-8090]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.ibm.springboot.SpringbootApplication.main(SpringbootApplication.java:17)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Stopping service [Tomcat]
+2020-11-18 === [main] === INFO  === o.s.b.a.l.AutoConfigurationReportLoggingInitializer === - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-11-18 === [main] === ERROR === o.s.b.diagnostics.LoggingFailureAnalysisReporter === - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 17:14:23 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Unregistering JMX-exposed beans on shutdown
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Starting SpringbootApplication on PC24 with PID 9280 (started by Administrator in D:\newtest\后端\springboot-demo)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - No active profile set, falling back to default profiles: default
+2020-11-18 === [main] === INFO  === o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext === - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 17:14:53 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat initialized with port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardService === - Starting service [Tomcat]
+2020-11-18 === [main] === INFO  === org.apache.catalina.core.StandardEngine === - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-18 === [localhost-startStop-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring embedded WebApplicationContext
+2020-11-18 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader === - Root WebApplicationContext: initialization completed in 1306 ms
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean === - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-18 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean === - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter === - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ca8564a: startup date [Wed Nov 18 17:14:53 CST 2020]; root of context hierarchy
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/logging/test],methods=[GET]}" onto public java.lang.String com.ibm.springboot.controller.LoggingController.loggingTest()
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/update],methods=[PUT]}" onto public void com.ibm.springboot.controller.MyBatisController.updateDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/insert],methods=[POST]}" onto public void com.ibm.springboot.controller.MyBatisController.insertEmployee(com.ibm.springboot.bean.Employee)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.getDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/insert],methods=[POST]}" onto public com.ibm.springboot.bean.Department com.ibm.springboot.controller.MyBatisController.insertDept(com.ibm.springboot.bean.Department)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/department/delete/{id}],methods=[DELETE]}" onto public void com.ibm.springboot.controller.MyBatisController.deleteDepartment(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/employee/query/{id}],methods=[GET]}" onto public com.ibm.springboot.bean.Employee com.ibm.springboot.controller.MyBatisController.getEmployee(java.lang.Integer)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-18 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping === - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping === - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-18 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter === - Registering beans for JMX exposure on startup
+2020-11-18 === [main] === INFO  === o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer === - Tomcat started on port(s): 8090 (http)
+2020-11-18 === [main] === INFO  === com.ibm.springboot.SpringbootApplication === - Started SpringbootApplication in 2.666 seconds (JVM running for 3.0)
+2020-11-18 === [http-nio-8090-exec-1] === INFO  === o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] === - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-11-18 === [http-nio-8090-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization started
+2020-11-18 === [http-nio-8090-exec-1] === INFO  === org.springframework.web.servlet.DispatcherServlet === - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
