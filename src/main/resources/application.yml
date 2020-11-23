@@ -14,13 +14,13 @@ spring:
     username: root 
     password: root  #修改为自己的数据库密码
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.10.104.188:3306/mybatis?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    
+
+    url: jdbc:mysql://localhost:3306/staff?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+
 mybatis:
   # 指定全局配置文件位置
   config-location: classpath:mybatis/mybatis-config.xml
-  # 指定sql映射文件位置
-  mapper-locations: classpath:mybatis/mapper/*.xml  
+ 
   
 logging:
    level:

@@ -2,50 +2,34 @@ package com.ibm.springboot.bean;
 
 public class Employee {
 
-	private Integer id;
-	private String lastName;
-	private Integer gender;
-	private String email;
-	private Integer dId;
-
-	public Integer getId() {
+	private String id;
+	private String name;
+	private double salary;
+	private int  age;
+	
+	public String getId() {
 		return id;
 	}
-
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
-
-	public String getLastName() {
-		return lastName;
+	public String getName() {
+		return name;
 	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setName(String name) {
+		this.name = name;
 	}
-
-	public Integer getGender() {
-		return gender;
+	public double getSalary() {
+		return salary;
 	}
-
-	public void setGender(Integer gender) {
-		this.gender = gender;
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
-
-	public String getEmail() {
-		return email;
+	public int getAge() {
+		return age;
 	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public void setAge(int age) {
+		this.age = age;
 	}
-
-	public Integer getdId() {
-		return dId;
-	}
-
-	public void setdId(Integer dId) {
-		this.dId = dId;
-	}
-
+	
 }
