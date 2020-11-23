@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ibm.springboot.mapper.StudentMapper">
+    <select id="getStuById" resultType="com.ibm.springboot.bean.Student">
+        SELECT * FROM student WHERE id=#{id}
+    </select>
+
+    <insert id="insertStu">
+        INSERT INTO student(Name,stu_no,age) VALUES (#{Name},#{stuno},#{age})
+    </insert>
+    <update id="updateStu">
+      update student set
+        Name=#{Name},
+        stu_no=#{stuno},
+        age=#{age}
+       where id=#{id}
+    </update>
+    
+   <delete id="deleteStuById">
+   delete from student WHERE id=#{id}
+   
+   </delete>
+</mapper>
