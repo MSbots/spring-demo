@@ -4,7 +4,6 @@ public class User{
 
 	private Integer id;
 	private String userName;
-
 	private String realName;
 	private String password;
 	private String sex;
@@ -52,6 +51,12 @@ public class User{
 
 	public void setSex(String sex) {
 		this.sex = sex;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", userName=" + userName + ", realName=" + realName + ", password=" + password
+				+ ", sex=" + sex + "]";
 	}
 
 }

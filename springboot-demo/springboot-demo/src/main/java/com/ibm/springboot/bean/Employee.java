@@ -2,15 +2,14 @@ package com.ibm.springboot.bean;
 
 public class Employee {
 
-	private String id;
+	private int id;
 	private String name;
 	private double salary;
 	private int  age;
-	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -30,6 +29,10 @@ public class Employee {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", salary=" + salary + ", age=" + age + "]";
 	}
 	
 }
